@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB9695DA20D9E69400E22767 /* MyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9695D920D9E69400E22767 /* MyCenterViewController.m */; };
 		CBF8174D20D8E890007A49E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF8174C20D8E890007A49E5 /* AppDelegate.m */; };
 		CBF8175020D8E891007A49E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF8174F20D8E891007A49E5 /* ViewController.m */; };
 		CBF8175320D8E891007A49E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF8175120D8E891007A49E5 /* Main.storyboard */; };
@@ -88,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB9695D820D9E69400E22767 /* MyCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCenterViewController.h; sourceTree = "<group>"; };
+		CB9695D920D9E69400E22767 /* MyCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCenterViewController.m; sourceTree = "<group>"; };
 		CBF8174820D8E890007A49E5 /* shortVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shortVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF8174B20D8E890007A49E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBF8174C20D8E890007A49E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -237,9 +240,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB9695D720D9E65000E22767 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CB9695D820D9E69400E22767 /* MyCenterViewController.h */,
+				CB9695D920D9E69400E22767 /* MyCenterViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		CBF8173F20D8E890007A49E5 = {
 			isa = PBXGroup;
 			children = (
+				CB9695D720D9E65000E22767 /* VC */,
 				CBF8193220D8F64B007A49E5 /* SDWebImage */,
 				CBF8192E20D8F391007A49E5 /* Cell */,
 				CBF8192820D8F323007A49E5 /* Model */,
@@ -661,6 +674,7 @@
 				CBF8197620D8F64B007A49E5 /* UIImageView+WebCache.m in Sources */,
 				CBF8197820D8F64B007A49E5 /* SDWebImageGIFCoder.m in Sources */,
 				CBF8197B20D8F64B007A49E5 /* UIView+WebCache.m in Sources */,
+				CB9695DA20D9E69400E22767 /* MyCenterViewController.m in Sources */,
 				CBF8191320D8F181007A49E5 /* UIScrollView+ZFPlayer.m in Sources */,
 				CBF8190F20D8F181007A49E5 /* ZFIJKPlayerManager.m in Sources */,
 				CBF8191220D8F181007A49E5 /* ZFOrientationObserver.m in Sources */,

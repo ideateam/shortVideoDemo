@@ -13,6 +13,7 @@
 #import "ZFDouYinCell.h"
 #import "VideoListModel.h"
 #import "UIImageView+WebCache.h"
+#import "MyCenterViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,TableCellBTNClickDelegate>
 
@@ -32,7 +33,10 @@
     [super viewWillLayoutSubviews];
     self.tableView.frame = self.view.bounds;
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     @weakify(self)
@@ -40,6 +44,10 @@
         @strongify(self)
         [self playTheVideoAtIndexPath:indexPath scrollToTop:NO];
     }];
+}
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self.player stop];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -192,6 +200,8 @@
 -(void)clickHeadIconBTN:(UIButton *)HeadIconBTN{
     
     NSLog(@"click HeadIconBTN");
+    MyCenterViewController *myCenter = [[MyCenterViewController alloc] init];
+    [self.navigationController pushViewController:myCenter animated:YES];
 }
 -(void)clickLikeBTN:(UIButton *)LikeBTN{
     
