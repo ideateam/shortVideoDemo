@@ -47,7 +47,7 @@
 }
 -(void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    [self.player stop];
+    [self.playerManager pause];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
